@@ -16,14 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _cityController = TextEditingController();
   bool _loadingLocation = false;
 
-  // Temperature-based card color
+  //temperature based card color
   Color getTempColor(double temp) {
     if (temp > 30) return Colors.orangeAccent;
     if (temp < 20) return Colors.deepPurple[300]!;
     return Colors.deepPurple[100]!;
   }
 
-  // Weather icons
+  //Weather icons
   Icon getWeatherIcon(String description) {
     description = description.toLowerCase();
     if (description.contains('sun')) {
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return const Icon(Icons.wb_cloudy, size: 60, color: Colors.grey);
   }
 
-  // Dynamic background gradient based on weather
+  //Dynamic background gradient based on weather
   List<Color> getBackgroundGradient(String description) {
     description = description.toLowerCase();
     if (description.contains('sun')) {
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return [Colors.grey.shade300, Colors.grey.shade600];
   }
 
-  // Fetch current location
+  //Fetch current location
   Future<void> fetchCurrentLocationWeather() async {
     setState(() => _loadingLocation = true);
 
@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final weatherProvider = Provider.of<WeatherProvider>(context);
     final weather = weatherProvider.weather;
 
-    // Default gradient if no weather loaded
+    //Default gradient if no weather loaded
     List<Color> backgroundColors = [Colors.purple.shade200, Colors.blue.shade400];
     if (weather != null) {
       backgroundColors = getBackgroundGradient(weather.description);
