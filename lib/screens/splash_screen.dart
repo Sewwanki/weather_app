@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     });
 
     //navigate to HomeScreen
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const HomeScreen()),
