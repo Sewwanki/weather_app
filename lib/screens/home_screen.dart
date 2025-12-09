@@ -65,6 +65,9 @@ class _HomeScreenState extends State<HomeScreen>
     return const Color(0xFF647DEE);
   }
 
+  // -----------------------------
+  // DYNAMIC ICONS
+  // -----------------------------
   Icon getWeatherIcon(String description) {
     description = description.toLowerCase();
 
@@ -385,6 +388,7 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 }
+
 
 
 
