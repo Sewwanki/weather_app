@@ -154,22 +154,22 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(23),
+          padding: const EdgeInsets.all(25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 80),
+              const SizedBox(height: 95),
               const Text(
                 "Search Weather",
                 style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 30,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 8),
               const Text(
                 "Find the latest weather updates instantly",
-                style: TextStyle(fontSize: 18, color: Colors.white70),
+                style: TextStyle(fontSize: 19, color: Colors.white70),
               ),
               const SizedBox(height: 30),
 
