@@ -166,10 +166,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               const Text(
                 "Find the latest weather updates instantly",
-                style: TextStyle(fontSize: 16, color: Colors.white70),
+                style: TextStyle(fontSize: 18, color: Colors.white70),
               ),
               const SizedBox(height: 30),
 
